@@ -45,13 +45,12 @@ input:checked + .slider:before {
   transform: translateX(55px);
 }
 
-/*------ ADDED CSS ---------*/
-.on
+.open
 {
   display: none;
 }
 
-.on, .off
+.open, .closed
 {
   color: white;
   position: absolute;
@@ -62,13 +61,11 @@ input:checked + .slider:before {
   font-family: Verdana, sans-serif;
 }
 
-input:checked+ .slider .on
+input:checked+ .slider .open
 {display: block;}
 
-input:checked + .slider .off
+input:checked + .slider .closed
 {display: none;}
-
-/*--------- END --------*/
 
 /* Rounded sliders */
 .slider.round {
